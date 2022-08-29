@@ -23,16 +23,16 @@ jobs:
             echo "--------- The images is Building ------------"
 
             docker build -t udagram-api-feed ./udagram-api-feed
-            docker tag udagram-api-feed abebewoldetsadik/udagram-api-feed:v3
+            docker tag udagram-api-feed abebewoldetsadik/udagram-api-feed:v5
 
             docker build -t udagram-api-user ./udagram-api-user
-            docker tag udagram-api-user abebewoldetsadik/udagram-api-user:v3
+            docker tag udagram-api-user abebewoldetsadik/udagram-api-user:v5
             
             docker build -t udagram-frontend ./udagram-frontend
-            docker tag udagram-frontend abebewoldetsadik/udagram-frontend:v3
+            docker tag udagram-frontend abebewoldetsadik/udagram-frontend:v5
 
             docker build -t udagram-reverseproxy ./udagram-reverseproxy
-            docker tag udagram-reverseproxy abebewoldetsadik/udagram-reverseproxy:v3
+            docker tag udagram-reverseproxy abebewoldetsadik/udagram-reverseproxy:v5
 
             echo "-------- All images succesfully built----------"
 
@@ -42,10 +42,10 @@ jobs:
 
             echo "-------------- Pushing images to dockerhub-------"
 
-            docker push abebewoldetsadik/udagram-api-feed:v3
-            docker push abebewoldetsadik/udagram-api-user:v3
-            docker push abebewoldetsadik/udagram-frontend:v3
-            docker push abebewoldetsadik/udagram-reverseproxy:v3
+            docker push abebewoldetsadik/udagram-api-feed:v5
+            docker push abebewoldetsadik/udagram-api-user:v5
+            docker push abebewoldetsadik/udagram-frontend:v5
+            docker push abebewoldetsadik/udagram-reverseproxy:v5
 
 workflows:
   default:
