@@ -17,8 +17,4 @@ spec:
         image: docker.io/abebewoldetsadik/udagram-api-feed:v3
         ports:
         - containerPort: 80
-        resources:
-          limits:
-            cpu: 500m
-          requests:
-            cpu: 200m
+        
